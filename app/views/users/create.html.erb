@@ -1,0 +1,50 @@
+
+
+<body class="form-bg" style="background-image: url(<%= '/assets/working.jpeg' %>); background-size : cover;">
+
+
+<div class="container contact-form">
+  <h1>Contact Form</h1>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-6">
+      <address>Dubai ,United Arab Emirates</address>
+      <P>Email:- info@rightsolutions.com</P>
+      <p>Phone:- 7845674387</p>
+      
+    </div>
+
+    <div class="col-md-6">
+<%= form_with(url: "/search", method: "get") do  %>
+
+      <div class="form-group">
+        <%= label_tag(:q , 'Name') %>
+        <input id="q" name="q" type="text" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <%= label_tag(:q , 'Message') %>
+        <textarea  rows = 7 class="form-control" ></textarea>
+      </div>
+
+      <div class="form-group">
+       <%= link_to 'Send' , root_path  , class: 'btn btn-outline-success btn-block' %>
+     </div>
+
+    </div>
+
+  </div>
+<% end %>
+</div>
+
+
+
+
+
+
+
+<%= render 'pages/footer' %>
+</body>
+
+

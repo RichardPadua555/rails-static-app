@@ -1,0 +1,39 @@
+<div class="container">	
+	<div class="jumbotron mt-4">
+	  <h1 class="display-4">Welcome to our About page</h1>
+	  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+	  <hr class="my-4">
+	  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+	  <p class="lead text-center">
+	    <%= link_to ' Careers & Our Technologies' , careers_path , class: 'btn btn-outline-info' %>
+	  </p>
+	</div>
+</div>
+
+<%= render 'users/paragraphs' %>
+
+
+<div class="container-fluid">
+	<div class="card-group mt-4">
+	  <div class="card">
+	     <%= image_tag("team.jpeg", :alt => "Card image cap" , class: 'card-img-top' ) %>
+		<div class="card-body">
+	      <h5 class="card-title">BEST IN CLASS TEAM</h5>
+	    </div>
+	  </div>
+	  <div class="card">
+	  	     <%= image_tag("card2.jpeg", :alt => "Card image cap" , class: 'card-img-top' ) %>
+	    <div class="card-body">
+	      <h5 class="card-title">  WE DELIVER CUSTOM APPLICATIONS</h5>
+	    </div>
+	  </div>
+	  <div class="card">
+	   <%= image_tag("card3.jpeg", :alt => "Card image cap" , class: 'card-img-top' ) %>
+	    <div class="card-body">
+	      <h5 class="card-title">BUILDING A BETTER FUTURE</h5>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<%= render 'footer' %>
